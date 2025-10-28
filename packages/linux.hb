@@ -27,7 +27,7 @@ package() {
     make INSTALL_HDR_PATH="$PACKAGE_DIR/usr" headers_install &&
     make distclean &&
     cp -rv . "$PACKAGE_DIR/usr/src/linux-${VERSION}" &&
-    ln -s "/usr/src/linux-${VERSION}" "$PACKAGE_DIR/usr/lib/modules/$(VERSION)/build" 
+    ln -s "/usr/src/linux-${VERSION}" "$PACKAGE_DIR/usr/lib/modules/${VERSION}/build" 
 }
 
 pre_inst() {

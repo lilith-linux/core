@@ -4,7 +4,7 @@ set -e
 NAME="make"
 DEPENDS=""
 BUILD_DEPENDS="gcc"
-DESC="A GNU tool for controlling the generation of executables and other non-source files of a program from the program's source files"
+DESC="GNU Make is a build automation tool that compiles and manages project files automatically based on defined dependencies"
 LICENSE="GPL-3.0-or-later AND LGPL-2.1-or-later AND GFDL-1.3-or-later AND FSFULLR"
 VERSION="4.4.1"
 SOURCE="https://github.com/mirror/make/archive/refs/tags/4.4.1.tar.gz"

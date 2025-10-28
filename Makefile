@@ -10,6 +10,7 @@ make-all:
 
 build:
 	cd ./packages && $(HBURG) build 
+	mv ./packages/index.bin ./packages/index.bin.hash .
 
 
 clean: 
