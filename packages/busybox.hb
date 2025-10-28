@@ -6,8 +6,8 @@ DEPENDS=""
 BUILD_DEPENDS=""
 DESC="BusyBox combines tiny versions of many common UNIX utilities into a single small executable."
 LICENSE="GPL-2.0"
-VERSION=""
-SOURCE="https://busybox.net/downloads/binaries/1.35.0-x86_64-linux-musl/busybox"
+VERSION="1.35.0"
+SOURCE="https://busybox.net/downloads/binaries/${VERSION}-x86_64-linux-musl/busybox"
 IS_BUILD="false"
 
 build() {
