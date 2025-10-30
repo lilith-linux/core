@@ -15,3 +15,4 @@ build:
 
 clean: 
 	cd ./packages && rm -f *.bin *.hcl *.hash
+	rm -f *.bin *.bin.hash

@@ -23,11 +23,7 @@ package() {
     mkdir -p "$PACKAGE_DIR/usr/src/linux-${VERSION}" "$PACKAGE_DIR/boot" &&
     cp ./.config "$PACKAGE_DIR/boot/old-config" &&
     cp ./arch/x86/boot/bzImage "$PACKAGE_DIR/boot/vmlinuz" &&
-    make modules_install INSTALL_MOD_PATH="$PACKAGE_DIR/usr" &&
-    make INSTALL_HDR_PATH="$PACKAGE_DIR/usr" headers_install &&
-    make distclean &&
-    cp -rv . "$PACKAGE_DIR/usr/src/linux-${VERSION}" &&
-    ln -s "/usr/src/linux-${VERSION}" "$PACKAGE_DIR/usr/lib/modules/${VERSION}/build" 
+    make modules_install INSTALL_MOD_PATH="$PACKAGE_DIR/usr"
 }
 
 pre_inst() {
@@ -36,7 +32,6 @@ pre_inst() {
 
 post_inst() {
   ln -s /boot/vmlinuz /boot/vmlinuz-${VERSION}
-  ln -s /usr/src/linux-${VERSION} /usr/src/linux
 }
 
 pre_rm() {

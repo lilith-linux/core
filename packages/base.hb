@@ -6,8 +6,8 @@ DEPENDS=""
 BUILD_DEPENDS=""
 DESC="Base filesystem for lilith linux"
 LICENSE="BSD-3-Clause License"
-VERSION="1.0.0"
-SOURCE="https://github.com/lilith-linux/base/archive/refs/tags/1.0.0.tar.gz"
+VERSION="1.1.0"
+SOURCE="https://github.com/lilith-linux/base/archive/refs/tags/${VERSION}.tar.gz"
 IS_BUILD="false"
 
 build() {
@@ -27,8 +27,7 @@ pre_inst() {
 }
 
 post_inst() {
-  ln -s /usr/lib/libc.so /usr/lib/ld-musl-x86_64.so.1 &&
-  ln -s /usr/lib/ld-musl-x86_64.so.1 /usr/bin/ldd
+  :
 }
 
 pre_rm() {
