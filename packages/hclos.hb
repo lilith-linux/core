@@ -4,7 +4,7 @@ DEPENDS=""
 BUILD_DEPENDS="curl busybox"
 DESC="Package Manager for Lilith Linux"
 LICENSE="CC0"
-VERSION="0.1.0-alpha"
+VERSION="0.1.0.1.0"
 SOURCE="https://github.com/lilith-linux/hclos/archive/refs/tags/${VERSION}.tar.gz"
 IS_BUILD="false"
 
