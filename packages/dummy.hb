@@ -1,5 +1,5 @@
 #!/usr/bin/env sh
-set -e
+
 
 NAME="dummy"
 DEPENDS="base linux musl"
