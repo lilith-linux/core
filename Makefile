@@ -3,16 +3,16 @@ HBURG ?= /usr/bin/hburg
 
 	
 make-all: 
-	cd ./packages/; \
+	cd ./public/packages/; \
 		for package in *.hb; do \
 			$(HBURG) make $$package; \
 		done
 
 build:
-	cd ./packages && $(HBURG) build 
-	mv ./packages/index.bin ./packages/index.bin.hash .
+	cd ./public/packages && $(HBURG) build 
+	mv ./public/packages/index ./public/packages/index.b3 ./public/
 
 
 clean: 
-	cd ./packages && rm -f *.bin *.hcl *.hash
-	rm -f *.bin *.bin.hash
+	cd ./public/packages && rm -f index *.clos *.b3 index.b3
+	rm -f index index.b3

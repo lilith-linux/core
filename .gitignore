@@ -1,4 +1,4 @@
-*.hcl
-*.hash
-index.bin
+*.clos
+*.b3
+public/index
 
